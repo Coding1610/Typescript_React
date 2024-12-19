@@ -1,4 +1,4 @@
-// props type :onClick
+// props type : onClick
 type ButtonProps = {
     handleClick : (event:React.MouseEvent<HTMLButtonElement>,id:number) => void;
 }
