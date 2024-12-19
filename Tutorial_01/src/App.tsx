@@ -7,6 +7,7 @@ import Box from "./Components/Context/Box";
 import User from "./Components/State/User";
 import Heading from "./Components/Heading";
 import DomRef from "./Components/Ref/DomRef";
+import List from "./Components/Generics/List";
 import Users from "./Components/Context/Users";
 import Container from "./Components/Container";
 import Profile from "./Components/Auth/Profile";
@@ -92,6 +93,8 @@ export default function App() {
       <Private isLoggedIn={true} component={Profile}/>
       <p>-------------------------</p>
 
+      <List items={["apple","orange","banana","mango"]} onClick = {(val) => console.log(val)} />
+      <p>-------------------------</p>
     </div>
   )
 }
