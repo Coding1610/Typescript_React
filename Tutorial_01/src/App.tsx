@@ -9,6 +9,8 @@ import Heading from "./Components/Heading";
 import DomRef from "./Components/Ref/DomRef";
 import Users from "./Components/Context/Users";
 import Container from "./Components/Container";
+import Profile from "./Components/Auth/Profile";
+import Private from "./Components/Auth/Private";
 import Counter from "./Components/State/Counter";
 import PersonList from "./Components/PersonList";
 import Counter2 from "./Components/Class/Counter2";
@@ -85,6 +87,9 @@ export default function App() {
       <p>-------------------------</p>
 
       <Counter2 msg='Count'/>
+      <p>-------------------------</p>
+
+      <Private isLoggedIn={true} component={Profile}/>
       <p>-------------------------</p>
 
     </div>
