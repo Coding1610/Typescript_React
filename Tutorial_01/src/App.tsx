@@ -17,6 +17,7 @@ import PersonList from "./Components/PersonList";
 import Counter2 from "./Components/Class/Counter2";
 import ImportTypes from "./Components/ImportTypes";
 import LoginLogout from "./Components/State/LoginLogout";
+import RandomNumber from "./Components/Restriction/RandomNumber";
 import { UserContextProvider } from "./Components/Context/UserContext";
 import { ThemeContextProvider } from "./Components/Context/ThemeContext";
 
@@ -95,6 +96,9 @@ export default function App() {
 
       <List items={["apple","orange","banana","mango"]} onClick = {(val) => console.log(val)} />
       <p>-------------------------</p>
+
+      <RandomNumber value={16} isPositive/>
+
     </div>
   )
 }
