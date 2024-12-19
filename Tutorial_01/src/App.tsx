@@ -11,6 +11,7 @@ import Users from "./Components/Context/Users";
 import Container from "./Components/Container";
 import Counter from "./Components/State/Counter";
 import PersonList from "./Components/PersonList";
+import Counter2 from "./Components/Class/Counter2";
 import ImportTypes from "./Components/ImportTypes";
 import LoginLogout from "./Components/State/LoginLogout";
 import { UserContextProvider } from "./Components/Context/UserContext";
@@ -81,6 +82,9 @@ export default function App() {
       <p>-------------------------</p>
 
       <DomRef/>
+      <p>-------------------------</p>
+
+      <Counter2 msg='Count'/>
       <p>-------------------------</p>
 
     </div>
